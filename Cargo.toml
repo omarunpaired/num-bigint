@@ -4,7 +4,7 @@ description = "Big integer implementation for Rust"
 documentation = "https://docs.rs/num-bigint"
 homepage = "https://github.com/rust-num/num-bigint"
 keywords = ["mathematics", "numerics", "bignum"]
-categories = [ "algorithms", "data-structures", "science" ]
+categories = ["algorithms", "data-structures", "science"]
 license = "MIT OR Apache-2.0"
 name = "num-bigint"
 repository = "https://github.com/rust-num/num-bigint"
@@ -43,6 +43,8 @@ harness = false
 name = "shootout-pidigits"
 
 [dependencies]
+rand_core = { version = "0.6", default-features = false }
+getrandom = { version = "0.2.15", features = ["js"] }
 
 [dependencies.num-integer]
 version = "0.1.46"
